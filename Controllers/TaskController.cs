@@ -26,7 +26,7 @@ namespace Task.Controllers
 
             newTask.Id = modelTasks.Count > 0 ? modelTasks[modelTasks.Count - 1].Id + 1 : 1;
             modelTasks.Add(newTask);
-            return Ok(newTask);
+            return Ok(modelTasks);
         }
 
 
